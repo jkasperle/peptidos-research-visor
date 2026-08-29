@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Tirzepatida · PRE-GLP-001</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .viewer {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .viewer img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="viewer">
+    <img src="Tirze1.png" alt="Tirzepatida · Página 1">
+    <img src="Tirze2.png" alt="Tirzepatida · Página 2">
+  </div>
+
+  <script>
+    if (window.Telegram && Telegram.WebApp) {
+      Telegram.WebApp.ready();
+      Telegram.WebApp.expand();
+
+      if (Telegram.WebApp.requestFullscreen) {
+        Telegram.WebApp.requestFullscreen();
+      }
+    }
+  </script>
+
+</body>
+</html>
